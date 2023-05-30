@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-struct ContentView: View {
+struct ListScreenView: View {
     @StateObject private var network = NetworkManager()
     @State private var progress = false
     let errorText = "The data couldn’t be read because it is missing."
@@ -18,6 +18,7 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 SearchBarView(network: network, progress: $progress)
+                    .padding(.top, 8)
                 VStack {
                     if network.error == "" {
                         scrollView
@@ -52,13 +53,13 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ListScreenView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ListScreenView()
     }
 }
 
-extension ContentView {
+extension ListScreenView {
     private var scrollView: some View {
         ScrollViewReader { value in
             ScrollView {
@@ -77,6 +78,10 @@ extension ContentView {
                         }
                     }
                 }
+                Rectangle()
+                    .frame(height: 30)
+                    .padding(.bottom)
+                    .opacity(0)
             }
             .scrollDismissesKeyboard(.immediately)
             .onChange(of: network.searchText) { _ in

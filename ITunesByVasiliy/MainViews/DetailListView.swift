@@ -15,7 +15,7 @@ struct DetailListView: View {
     let trackName: String
     let previewUrl: String
     let artworkUrl100: String
-
+    
     var body: some View {
         VStack {
             VStack {
@@ -23,12 +23,14 @@ struct DetailListView: View {
                     .padding(5)
                     .background(.black)
                     .cornerRadius(15)
-                Text(trackName)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .multilineTextAlignment(.center)
-                Text(artistName)
-                    .multilineTextAlignment(.center)
+                VStack {
+                    Text(trackName)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                    Text(artistName)
+                }
+                .multilineTextAlignment(.center)
+                .padding(.horizontal)
             }
             .padding(.top, 64)
             Spacer()

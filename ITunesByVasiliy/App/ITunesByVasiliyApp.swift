@@ -11,7 +11,7 @@ import SwiftUI
 struct ITunesByVasiliyApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListScreenView()
         }
     }
 }

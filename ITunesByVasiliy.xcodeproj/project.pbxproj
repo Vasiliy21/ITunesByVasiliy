@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FFA88CC62A25255500FAC187 /* ITunesByVasiliyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA88CC52A25255500FAC187 /* ITunesByVasiliyApp.swift */; };
-		FFA88CC82A25255500FAC187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA88CC72A25255500FAC187 /* ContentView.swift */; };
+		FFA88CC82A25255500FAC187 /* ListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA88CC72A25255500FAC187 /* ListScreenView.swift */; };
 		FFA88CCA2A25255900FAC187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA88CC92A25255900FAC187 /* Assets.xcassets */; };
 		FFA88CCD2A25255900FAC187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA88CCC2A25255900FAC187 /* Preview Assets.xcassets */; };
 		FFA88CD42A25265A00FAC187 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA88CD32A25265A00FAC187 /* SearchBarView.swift */; };
@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		FFA88CC22A25255500FAC187 /* ITunesByVasiliy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITunesByVasiliy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA88CC52A25255500FAC187 /* ITunesByVasiliyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesByVasiliyApp.swift; sourceTree = "<group>"; };
-		FFA88CC72A25255500FAC187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FFA88CC72A25255500FAC187 /* ListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreenView.swift; sourceTree = "<group>"; };
 		FFA88CC92A25255900FAC187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA88CCC2A25255900FAC187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFA88CD32A25265A00FAC187 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 		FFA88CEA2A260F3E00FAC187 /* MainViews */ = {
 			isa = PBXGroup;
 			children = (
-				FFA88CC72A25255500FAC187 /* ContentView.swift */,
+				FFA88CC72A25255500FAC187 /* ListScreenView.swift */,
 				FFA88CE22A25D70C00FAC187 /* DetailListView.swift */,
 			);
 			path = MainViews;
@@ -213,7 +213,7 @@
 				FFA88CE32A25D70C00FAC187 /* DetailListView.swift in Sources */,
 				FFA88CE52A25D7F200FAC187 /* URLImageView.swift in Sources */,
 				FFA88CD72A25282A00FAC187 /* NetworkManager.swift in Sources */,
-				FFA88CC82A25255500FAC187 /* ContentView.swift in Sources */,
+				FFA88CC82A25255500FAC187 /* ListScreenView.swift in Sources */,
 				FFA88CC62A25255500FAC187 /* ITunesByVasiliyApp.swift in Sources */,
 				FFA88CDE2A2537A900FAC187 /* UIApplication.swift in Sources */,
 				FFA88CD42A25265A00FAC187 /* SearchBarView.swift in Sources */,

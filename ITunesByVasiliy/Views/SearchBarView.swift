@@ -17,6 +17,7 @@ struct SearchBarView: View {
                 .foregroundColor(
                     network.searchText.count < 3 ? .secondary : Color.black
                 )
+                .padding(.leading, 5)
             TextField("Название  песни", text: $network.searchText)
                 .disableAutocorrection(true)
                 .keyboardType(.asciiCapable)
@@ -37,7 +38,7 @@ struct SearchBarView: View {
                 }
             Image(systemName: "xmark")
                 .padding(15)
-                .scaleEffect(1.2)
+                .controlSize(.regular)
                 .offset(x: 8)
                 .foregroundColor(
                     network.searchText.isEmpty ? .secondary : Color.black
@@ -51,7 +52,7 @@ struct SearchBarView: View {
                 }
         }
         .font(.headline)
-        .padding(8)
+        .padding(3)
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .fill(.ultraThinMaterial)
