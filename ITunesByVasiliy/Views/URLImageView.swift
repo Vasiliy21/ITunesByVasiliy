@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct URLImageView: View {
-
     let image: String
     let width: CGFloat
     let height: CGFloat
 
     var body: some View {
-        AsyncImage(url: URL(string: image), transaction: Transaction(animation: .default)) { phase in
+        AsyncImage(
+            url: URL(string: image),
+            transaction: Transaction(animation: .default)
+        ) { phase in
             switch phase {
             case .success(let image):
                 ZStack {
@@ -39,9 +41,9 @@ struct URLImageView: View {
                 .transition(.opacity)
 
             case .empty:
-                        ProgressView()
+                ProgressView()
                     .tint(.white)
-                            .scaleEffect(1.2)
+                    .scaleEffect(1.2)
                     .transition(.opacity)
             @unknown default:
                 EmptyView()

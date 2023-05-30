@@ -9,10 +9,9 @@ import Foundation
 import SwiftUI
 
 class NetworkManager: ObservableObject {
-
     @Published var searchText = ""
-    @Published var tracks: [Track] = []
     @Published var error = "error"
+    @Published var tracks: [Track] = []
 
     func fetchMusic() {
         guard let url = URL(
@@ -25,7 +24,6 @@ class NetworkManager: ObservableObject {
             }
             do {
                 let music = try JSONDecoder().decode(Music.self, from: data)
-//                print(music)
                 DispatchQueue.main.async {
                     self.tracks = music.results
                 }

@@ -13,6 +13,7 @@ struct ContentView: View {
     private let columns = [
         GridItem(.adaptive(minimum: UIScreen.main.bounds.width - 20))
     ]
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -85,16 +86,16 @@ extension ContentView {
             }
         }
     }
-
+    
     private var progressView: some View {
-            ZStack {
-                Color.white
-                    .ignoresSafeArea()
-                ProgressView()
-                    .controlSize(.large)
-                    .scaleEffect(1.1)
-                    .tint(.black)
-                    .padding(.bottom, 16)
-            }
+        ZStack {
+            Color.white
+                .ignoresSafeArea()
+            ProgressView()
+                .controlSize(.large)
+                .scaleEffect(1.1)
+                .tint(.black)
+                .padding(.bottom, 16)
+        }
     }
 }

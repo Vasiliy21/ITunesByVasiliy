@@ -14,7 +14,9 @@ struct SearchBarView: View {
     var body: some View {
         HStack {
             Image(systemName: "magnifyingglass")
-                .foregroundColor(network.searchText.count < 3 ? .secondary : Color.black)
+                .foregroundColor(
+                    network.searchText.count < 3 ? .secondary : Color.black
+                )
             TextField("Название  песни", text: $network.searchText)
                 .disableAutocorrection(true)
                 .keyboardType(.asciiCapable)
@@ -23,8 +25,8 @@ struct SearchBarView: View {
                     network.tracks.removeAll()
                     if network.searchText.count >= 3 {
                         progress = true
-                            network.error = ""
-                            network.fetchMusic()
+                        network.error = ""
+                        network.fetchMusic()
                         DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                             progress = false
                         }
@@ -37,7 +39,9 @@ struct SearchBarView: View {
                 .padding(15)
                 .scaleEffect(1.2)
                 .offset(x: 8)
-                .foregroundColor(network.searchText.isEmpty ? .secondary : Color.black)
+                .foregroundColor(
+                    network.searchText.isEmpty ? .secondary : Color.black
+                )
                 .opacity(network.searchText.isEmpty ? 0.0 : 1.0)
                 .onTapGesture {
                     network.tracks.removeAll()

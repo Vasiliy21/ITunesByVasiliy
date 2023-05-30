@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct CellView: View {
-
     let artistName: String
     let trackName: String
     let previewUrl: String
@@ -60,7 +59,12 @@ struct CellView: View {
 
 struct CellView_Previews: PreviewProvider {
     static var previews: some View {
-        CellView(artistName: "Snoop Dog", trackName: "Name", previewUrl: "", artworkUrl100: "https://is4-ssl.mzstatic.com/image/thumb/Music6/v4/22/a0/c4/22a0c436-184b-a0f1-efde-2921708d9d25/itunes.jpg/100x100bb.jpg")
+        CellView(
+            artistName: "Snoop Dog",
+            trackName: "Name",
+            previewUrl: "",
+            artworkUrl100: "https://is4-ssl.mzstatic.com/image/thumb/Music6/v4/22/a0/c4/22a0c436-184b-a0f1-efde-2921708d9d25/itunes.jpg/100x100bb.jpg"
+        )
     }
 }
 
